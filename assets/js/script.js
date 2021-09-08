@@ -8,7 +8,7 @@ function getCity() {
 
     let cityName = document.getElementById("searchInput").value;
 
-    fetch("http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=c17b02b3e52383eb9e3d41d0e52d5ea6")
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=c17b02b3e52383eb9e3d41d0e52d5ea6")
         .then(function (response) {
             if (response.ok) {
                 console.log(response);
