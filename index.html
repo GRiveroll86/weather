@@ -4,32 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
-    ></script>
-    <script 
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
     ></script>
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Weather</title>
   </head>
 
   <body>
+
+    <h1>Weather Dashboard</h1>
+
+    <div id="mainContainer">
+
+      <aside id="searchContainer">
+
+        <h2>Search for a city:</h2>
+        <input id="searchInput" placeholder="City name">
+        <div id="searchBtn">Search</div>
+        <div id="searchHistory">
+
+        </div>
+        
+      </aside>
+  
+      <div id="weatherContainer">
+
+        <div id="todayContainer">
+          <h2 id="todayCityName">Searched city will display:</h2>
+          <p id="todayTemp">Temperature</p>
+          <p id="todayWind">Wind Speed</p>
+          <p id="todayHum">Humidity</p>
+          <p id="todayUVI">UV Index</p>
+        </div>
+    
+        <div id="futureContainer">
+
+          <div>
+            <h3 id="futureDate1"></h3>
+            <p id="futureIcon1"></p>
+            <p id="futureTemp1"></p>
+            <p id="futureWind1"></p>
+            <p id="futureHum1"></p>
+          </div>
+
+          <div>
+            <h3 id="futureDate2"></h3>
+            <p id="futureIcon2"></p>
+            <p id="futureTemp2"></p>
+            <p id="futureWind2"></p>
+            <p id="futureHum2"></p>
+          </div>
+
+          <div>
+            <h3 id="futureDate3"></h3>
+            <p id="futureIcon3"></p>
+            <p id="futureTemp3"></p>
+            <p id="futureWind3"></p>
+            <p id="futureHum3"></p>
+          </div>
+
+          <div>
+            <h3 id="futureDate4"></h3>
+            <p id="futureIcon4"></p>
+            <p id="futureTemp4"></p>
+            <p id="futureWind4"></p>
+            <p id="futureHum4"></p>
+          </div>
+
+          <div>
+            <h3 id="futureDate5"></h3>
+            <p id="futureIcon5"></p>
+            <p id="futureTemp5"></p>
+            <p id="futureWind5"></p>
+            <p id="futureHum5"></p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
     <script src="assets/js/script.js"></script>
   </body>
 </html>
